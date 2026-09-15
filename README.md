@@ -125,4 +125,3 @@ Avertissement
 💬 Discord
 
 </div>
-```Tous les liens pointent maintenant vers github.com/weasel743/SnoopBuilder. Le clone, les releases, les issues, le fork, la licence — tout est aligné sur ton pseudo et le nom exact du repo.
