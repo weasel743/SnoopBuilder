@@ -1,4 +1,4 @@
-Voilà le README complet avec les liens corrects pour weasel743 / SnoopBuilder :
+Parfait, ton lien est bon. Voilà le README final prêt à coller dans README.md sur ton repo weasel743/SnoopBuilder :
 
 ```markdown
 <div align="center">
@@ -125,3 +125,4 @@ Avertissement
 💬 Discord
 
 </div>
+```
