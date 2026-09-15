@@ -207,7 +207,7 @@ This software is provided for educational and authorized security research only.
 
 ---
 
-<div align="center">Built with ☕ and 🖤
+<div align="center">Built with 🍁 and 🖤
 
 https://img.shields.io/github/stars/<user>/snoop-builder?style=social
 https://img.shields.io/github/forks/<user>/snoop-builder?style=social
