@@ -1,25 +1,3 @@
-[MAHI68] copie le bloc ci-dessous et colle-le dans un fichier nommé exactement README.md à la racine de ton dossier Snoopbuilder.
-
-Comment faire sur Windows :
-
-1. Ouvre C:\Users\root1\Desktop\Snoopbuilder
-2. Clic droit dans le dossier → Nouveau → Document texte
-3. Nomme-le README.md (si Windows ajoute .txt, renomme-le et accepte l'avertissement)
-4. Ouvre-le avec Notepad ou VS Code
-5. Colle le contenu ci-dessous
-6. Enregistrer
-
-Via Git ensuite :
-
-```bat
-cd C:\Users\root1\Desktop\Snoopbuilder
-git add README.md
-git commit -m "Add README"
-git push
-```
-
-Voici le contenu à coller :
-
 ```markdown
 <div align="center">
 
