@@ -75,7 +75,4 @@ MIT
 
 ---
 
-<div align="center">Built with ☕ and 🖤
-
-</div>
-```Voilà, README compact (~60 lignes), bilingue, avec badges, tableaux et sections claires. Colle-le dans README.md.
+<div align="center">Built with 🍁 and 🖤
