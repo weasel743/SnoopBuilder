@@ -1,78 +1,97 @@
 ```markdown
 <div align="center">
 
-# 🕵️ Snoop Builder
 
-**A modern PyQt5 GUI to build Python payloads into `.exe` / `.py`**
-**Interface PyQt5 moderne pour builder des payloads Python en `.exe` / `.py`**
+# 🕵️ SNOOP | Payload Builder
+### *Modern PyQt5 GUI — 28 Modules · Dual Compiler · Discord Webhook*
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://python.org)
-[![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D4?logo=windows&logoColor=white)]()
-[![PyQt5](https://img.shields.io/badge/PyQt5-5.15-41CD52?logo=qt&logoColor=white)]()
-[![License](https://img.shields.io/badge/License-MIT-yellow)]()
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D4?style=flat&logo=windows&logoColor=white)]()
+[![PyQt5](https://img.shields.io/badge/PyQt5-5.15-41CD52?style=flat&logo=qt&logoColor=white)]()
+[![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289DA?style=for-the-badge&logo=discord)](https://discord.gg/VOTRE_INVITE)
 
-Modules · Security · Dual Compiler · Discord Webhook
+---
+
+**Snoop Builder** is a modern desktop application to configure and compile Python payloads into `.exe` or `.py` — 28 configurable modules, 5 security options, dual compiler support, and Discord webhook exfiltration.
 
 </div>
 
 ---
 
-## ✨ Features
+## 🛠️ CORE CAPABILITIES
 
-| | |
-|---|---|
-| **28 modules** | credentials, Discord tokens, wallets, WiFi, VPN, SSH, cloud, gaming, screenshot, webcam |
-| **5 security options** | Anti-VM/Debug · Anti-Tamper · Persistence · Self-Delete · Wipe Logs |
-| **2 compilers** | PyInstaller (fast) · Nuitka (C-compiled, stealthier) |
-| **Exfiltration** | Discord webhook · cascading embeds · single structured zip (6.5 MB cap) |
-| **UI** | Frameless · accent color picker · config save/load JSON |
+| Category | Modules Overview |
+| :--- | :--- |
+| **System** | System Info, Environment, Installed Apps, Product Key |
+| **Credentials** | Passwords, Cookies, Credit Cards, Autofill, Extensions |
+| **Discord & Roblox** | Tokens, Metadata, Account info (via API) |
+| **Wallets** | 20 desktop wallets + 6 browser wallets |
+| **Network & Remote** | WiFi, VPN, FTP, SSH, Cloud Credentials |
+| **Media & Files** | Screenshot, Webcam, Telegram, Signal, Sensitive Files |
 
-## 📦 Install
+---
 
-**Windows** — install [Python 3.12+](https://python.org/downloads) (check *Add to PATH*), then:
+## 🔒 SECURITY OPTIONS
 
-```bat
+| Option | Description |
+| :--- | :--- |
+| **Anti-VM/Debug** | Detects VMs, sandboxes, debuggers |
+| **Anti-Tamper** | Hides the console window |
+| **Startup Persistence** | Adds to `HKCU\...\Run` |
+| **Self-Delete** | Auto-removes after execution |
+| **Wipe Logs** | Cleans Event Viewer, Defender history, WinRE |
+
+---
+
+## 🚀 GETTING STARTED
+
+### ⚡ Windows (Recommended)
+
+1. **Install:** Double-click **`install.bat`** — auto-installs Python, pip, PyQt5, PyInstaller, Nuitka, C compiler, and all dependencies.
+2. **Launch:** Double-click **`start.bat`** to open the builder.
+
+### 💻 Manual / Cross-Platform
+
+```bash
+# Clone the repository
 git clone https://github.com/<user>/snoop-builder.git
 cd snoop-builder
-install.bat
-```
 
-macOS / Linux — brew install python or sudo apt install python3 python3-pip python3-venv, then:
-
-```bash
-git clone https://github.com/<user>/snoop-builder.git && cd snoop-builder
+# Install dependencies
 pip install "PyQt5>=5.15.9,<6" requests pyinstaller nuitka
-```
 
-🚀 Usage
-
-```bash
+# Run the builder
 python builder.py
 ```
 
-1. Options — webhook URL, modules, security
-2. Builder — name, output type, compiler, icon, path
-3. Start build
+---
 
-🏗️ Architecture
+🏗️ ARCHITECTURE
 
-Builder ↔ template communicate via placeholders:
+Builder ↔ template communicate via placeholders replaced at build time:
 
 Placeholder Purpose
 %%WEBHOOK_URL%% Exfiltration URL
 %%MODULE_FLAG_<NAME>%% Enable a module
 %%SECURITY_<NAME>%% Enable a security option
 
-Guard: build fails if any %%...%% remains.
-
-⚠️ Disclaimer
-
-Educational and security research purposes only. Illegal use prohibited. Authors not responsible for misuse.
-
-📄 License
-
-MIT
+A guard fails the build if any %%...%% remains unreplaced.
 
 ---
 
-<div align="center">Built with 🍁 and 🖤
+⚠️ LEGAL DISCLAIMER
+
+This software is provided for educational and authorized security research only. Unauthorized access to computer systems, networks, or accounts is illegal. The author does not condone misuse. By using this tool, you assume full responsibility for your actions and compliance with all applicable laws.
+
+---
+
+<div align="center">Built with ☕ and 🖤
+
+</div>
+```Ce que tu dois faire avant de coller :
+
+1. Ligne 3 — remplace VOTRE_LIEN_IMAGE_ICI par un lien d'image hébergée (bannière du repo, capture du builder, etc.). Si tu n'en as pas, supprime cette ligne.
+2. Ligne 9 — remplace https://discord.gg/VOTRE_INVITE par ton lien Discord, ou supprime la ligne si tu n'en as pas.
+3. Section "Manual" — remplace <user> par ton pseudo GitHub.
+
+Ensuite : Notepad → coller → Enregistrer sous → README.md → type Tous les fichiers → encodage UTF-8.
