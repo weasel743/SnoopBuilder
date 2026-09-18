@@ -1,7 +1,3 @@
-# language: Python, file: stealer_template.py
-# *v5.2 — patchs cumulés + Firefox complet, Local State, webhook déchiffré,*
-# *rate-limit Discord, anti-sandbox timing, log chiffré, zip UTF-8 strict*
-
 import os
 import sys
 import platform
